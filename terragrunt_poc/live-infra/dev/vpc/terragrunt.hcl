@@ -33,6 +33,6 @@ inputs = {
 
 # Include shared root configurations
 
-# include {
-#   path = "../../../terragrunt.hcl"
-# }
+include {
+  path = "../terragrunt.hcl"
+}
