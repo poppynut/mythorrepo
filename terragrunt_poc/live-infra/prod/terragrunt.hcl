@@ -17,7 +17,7 @@ remote_state {
     if_exists = "overwrite_terragrunt"
   }
   config = {
-    bucket = "terragrunt-mystormbreakerbucket-thor"
+    bucket = "hmcl-thor-odin-statefile-bucketstore"
 
     key = "${path_relative_to_include()}/terraform.tfstate"
     region         = "ap-south-1"

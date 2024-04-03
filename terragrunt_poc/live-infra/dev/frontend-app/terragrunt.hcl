@@ -1,6 +1,11 @@
 terraform {
   source = "../../../modules/ec2-instance"
 }
+
+dependency "vpc" {
+  config_path = "../vpc"
+}
+
 inputs = {
   instance_type = "t2.micro"
   instance_name = "example-server-thorev"
