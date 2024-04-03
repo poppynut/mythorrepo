@@ -3,9 +3,9 @@
 # "tfr://registry.terraform.io/terraform-aws-modules/vpc/aws?version=3.5.0".
 # Note the extra `/` after the protocol is required for the shorthand
 # notation.
-include "root" {
-  path = find_in_parent_folders()
-}
+# include "root" {
+#   path = find_in_parent_folders()
+# }
 
 terraform {
   source = "../../../modules/vpc"
