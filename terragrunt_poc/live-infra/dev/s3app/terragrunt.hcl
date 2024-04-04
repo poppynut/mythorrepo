@@ -1,8 +1,7 @@
-# # stage/mysql/terragrunt.hcl
-# include "root" {
-#   path = find_in_parent_folders()
-# }
-
+# stage/mysql/terragrunt.hcl
+include "root" {
+  path = find_in_parent_folders()
+}
 terraform {
   source = "../../../modules/s3bucket"
 }
@@ -11,8 +10,8 @@ inputs = {
   bucket = "dev-datastore-inifinity-stones"
 }
 
-# Include shared root configurations
+# # Include shared root configurations
 
-include {
-  path = "../terragrunt.hcl"
-}
+# include {
+#   path = "../terragrunt.hcl"
+# }

@@ -1,3 +1,8 @@
+# stage/mysql/terragrunt.hcl
+include "root" {
+  path = find_in_parent_folders()
+}
+
 terraform {
   source = "../../../modules/ec2-instance"
 }
@@ -17,8 +22,8 @@ inputs = {
   }
 }
 
-# Include shared root configurations
+# # Include shared root configurations
 
-include {
-  path = "../terragrunt.hcl"
-}
+# include {
+#   path = "../terragrunt.hcl"
+# }
