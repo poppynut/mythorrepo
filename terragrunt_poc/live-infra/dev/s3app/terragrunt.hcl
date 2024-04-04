@@ -8,6 +8,7 @@ terraform {
 }
 inputs = {
   s3_bucket_name = "dev-datastore-inifinity-stones"
+  bucket = "dev-datastore-inifinity-stones"
 }
 
 # Include shared root configurations
