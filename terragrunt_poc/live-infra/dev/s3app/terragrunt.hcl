@@ -6,8 +6,8 @@ terraform {
   source = "../../../modules/s3bucket"
 }
 inputs = {
-  s3_bucket_name = "dev-datastore-inifinity-stones"
-  bucket = "dev-datastore-inifinity-stones"
+  s3_bucket_name = "dev-datastore-inifinity-stones1"
+  bucket = "dev-datastore-inifinity-stones1"
 }
 
 # # Include shared root configurations
